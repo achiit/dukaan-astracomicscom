@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Astra Comics | India's Original Superhero Stories, Beyond Imagination</title>
+<meta name="description" content="Astra Comics is an original Indian superhero comic universe (ACU) founded in 2022 by the Shaikh Brothers. Read Shock Master 1 for ₹899. Order on WhatsApp.">
+<meta name="theme-color" content="#14141A">
+<meta property="og:title" content="Astra Comics | Original Indian Superhero Comics">
+<meta property="og:description" content="An original Indian superhero comic universe with unique heroes and stories. Shock Master 1 now available.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2314141A'/%3E%3Cpath d='M36 6 16 36h13l-4 22 23-32H34z' fill='%23E4252B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F0EA;
+  --ink:#14141A;
+  --accent:#E4252B;
+  --accent-dark:#B91C21;
+  --silver:#A9AEB6;
+  --border:#D3CEC4;
+  --font-display:'Yatra One',Georgia,serif;
+  --font-body:'Mukta',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:var(--font-body);background:var(--bg);color:var(--ink);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:1.1;letter-spacing:.2px}
+.wrap{width:min(1180px,92%);margin:0 auto}
+section{padding:100px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+.eyebrow svg{width:18px;height:18px}
+h2{font-size:clamp(34px,5vw,56px);margin-bottom:20px}
+.lead{max-width:560px;color:#4a4a52}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 26px;font-family:var(--font-body);font-weight:700;font-size:16px;border:2px solid var(--ink);cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s;border-radius:2px}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.btn-primary:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn-outline{background:transparent;color:var(--ink);box-shadow:4px 4px 0 var(--silver)}
+.btn-outline:hover{background:var(--ink);color:var(--bg);transform:translate(-2px,-2px)}
+.btn-sm{padding:9px 16px;font-size:14px;box-shadow:3px 3px 0 var(--ink)}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:var(--ink);color:var(--bg);border-bottom:4px solid var(--accent)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-size:24px;letter-spacing:1px}
+.logo svg{width:30px;height:30px}
+.logo span{color:var(--accent)}
+.nav-links{display:flex;gap:26px;font-weight:600;font-size:15px}
+.nav-links a{padding:6px 0;border-bottom:2px solid transparent}
+.nav-links a:hover{border-color:var(--accent)}
+.nav-cta{display:flex;gap:10px;align-items:center}
+.nav-cta .btn{border-color:var(--bg);box-shadow:none;padding:9px 16px;font-size:14px}
+.nav-cta .btn-primary{background:var(--accent);border-color:var(--accent)}
+.nav-cta .btn-outline{color:var(--bg)}
+.nav-cta .btn-outline:hover{background:var(--bg);color:var(--ink)}
+.burger{display:none;background:none;border:2px solid var(--bg);width:42px;height:42px;cursor:pointer;color:var(--bg);align-items:center;justify-content:center}
+.burger svg{width:22px;height:22px}
+.mobile-menu{display:none;background:var(--ink);border-top:1px solid #333}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:16px 4%;color:var(--bg);font-weight:600;border-bottom:1px solid #2a2a30}
+
+/* Hero */
+.hero{padding:70px 0 100px;background:
+  radial-gradient(circle at 1.5px 1.5px,rgba(20,20,26,.12) 1.5px,transparent 0) 0 0/16px 16px,var(--bg);position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(40px,6.2vw,76px);margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.proof{font-weight:600;font-size:18px;margin-bottom:28px;max-width:520px;padding-left:16px;border-left:5px solid var(--accent)}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.micro{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;color:#4a4a52;font-weight:600}
+.micro span{display:inline-flex;align-items:center;gap:6px}
+.micro svg{width:16px;height:16px}
+.hero-visual{position:relative}
+.cover-frame{background:var(--ink);border:4px solid var(--ink);box-shadow:12px 12px 0 var(--accent);transform:rotate(2.5deg);padding:10px}
+.cover-frame svg{width:100%;height:auto;display:block}
+.burst{position:absolute;top:-30px;left:-30px;width:110px;height:110px;z-index:2;transform:rotate(-12deg)}
+
+/* Trust strip */
+.trust{padding:0;background:var(--ink);color:var(--bg)}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-item{padding:40px 24px;border-right:1px solid #33333a;display:flex;flex-direction:column;gap:6px}
+.trust-item:last-child{border-right:0}
+.trust-item strong{font-family:var(--font-display);font-size:46px;font-weight:400;color:var(--accent);line-height:1}
+.trust-item span{font-size:15px;color:var(--silver)}
+
+/* Products */
+.products-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;margin-top:48px}
+.card{background:#FBF9F4;border:2px solid var(--ink);padding:32px;position:relative;box-shadow:6px 6px 0 var(--ink)}
+.card.featured{display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:start}
+.card h3{font-size:30px;margin-bottom:10px}
+.card p{color:#4a4a52;margin-bottom:18px}
+.price{font-family:var(--font-display);font-size:36px;color:var(--accent);margin-bottom:16px;display:block}
+.price small{font-family:var(--font-body);font-size:14px;color:#6b6b72;font-weight:600}
+.badge{position:absolute;top:-14px;right:20px;background:var(--accent);color:#fff;font-weight:700;font-size:12px;letter-spacing:1.5px;padding:5px 12px;text-transform:uppercase;border:2px solid var(--ink)}
+.mini-cover{background:var(--ink);border:3px solid var(--ink);padding:6px}
+.mini-cover svg{width:100%;height:auto}
+.card.soon{background:transparent;border-style:dashed;box-shadow:none;display:flex;flex-direction:column;justify-content:center}
+.card.soon h3{font-size:26px}
+.ico{width:44px;height:44px;margin-bottom:14px}
+
+/* About */
+.about{background:var(--ink);color:var(--bg);position:relative;overflow:hidden}
+.about .eyebrow{color:var(--accent)}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
+.avatar-block{position:sticky;top:110px}
+.avatar{width:180px;height:180px;border-radius:50%;background:var(--accent);color:#fff;font-family:var(--font-display);font-size:68px;display:flex;align-items:center;justify-content:center;border:5px solid var(--bg);box-shadow:8px 8px 0 var(--silver);margin-bottom:26px}
+.avatar-block h3{font-size:30px;margin-bottom:4px}
+.avatar-block p{color:var(--silver);font-size:15px}
+.about-copy p{margin-bottom:20px;color:#DAD6CC;font-size:18px}
+.diff{margin-top:34px;display:grid;gap:14px}
+.diff li{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-top:1px solid #34343c;font-weight:500}
+.diff svg{width:22px;height:22px;flex:none;margin-top:3px}
+
+/* Gallery (layout-breaking) */
+.gallery-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:40px}
+.gallery{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:140px;gap:14px}
+.g{position:relative;overflow:hidden;border:2px solid var(--ink);background:var(--ink)}
+.g img{width:100%;height:100%;object-fit:cover;filter:grayscale(.35) contrast(1.05);transition:transform .4s,filter .4s}
+.g:hover img{transform:scale(1.06);filter:none}
+.g1{grid-column:span 3;grid-row:span 3}
+.g2{grid-column:span 3;grid-row:span 2}
+.g3{grid-column:span 2;grid-row:span 2}
+.g4{grid-column:span 2;grid-row:span 2}
+.g5{grid-column:span 2;grid-row:span 2}
+.g6{grid-column:span 3;grid-row:span 1}
+.cap{position:absolute;left:0;bottom:0;background:var(--ink);color:var(--bg);font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:5px 10px}
+
+/* Testimonials */
+.reviews{background:#EAE6DD}
+.rev-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:26px;margin-top:44px;align-items:start}
+.rev{background:var(--bg);border:2px solid var(--ink);padding:28px;box-shadow:5px 5px 0 var(--silver)}
+.rev:nth-child(2){margin-top:34px}
+.rev:nth-child(3){margin-top:12px}
+.stars{display:flex;gap:3px;margin-bottom:14px}
+.stars svg{width:20px;height:20px}
+.rev p{margin-bottom:18px;font-size:17px}
+.rev b{display:block;font-weight:700}
+.rev span{font-size:14px;color:#6b6b72}
+
+/* Pricing */
+.price-list{max-width:760px;margin-top:40px;border-top:3px solid var(--ink)}
+.price-row{display:flex;justify-content:space-between;gap:20px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--border)}
+.price-row div b{font-size:19px;display:block}
+.price-row div span{font-size:15px;color:#6b6b72}
+.price-row strong{font-family:var(--font-display);font-size:28px;font-weight:400;color:var(--accent);white-space:nowrap}
+.price-note{margin-top:22px;color:#4a4a52;font-size:15px}
+
+/* Contact */
+.contact{background:#EAE6DD}
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;margin-top:44px}
+.map{border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink);height:100%;min-height:380px;background:var(--border)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+.info h3{font-size:24px;margin:0 0 12px}
+.hours{display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;margin-bottom:30px;padding:18px 20px;background:var(--bg);border:2px solid var(--ink)}
+.hours span:nth-child(even){text-align:right;font-weight:600}
+.methods{display:grid;gap:12px}
+.methods a.m{display:flex;align-items:center;gap:14px;padding:14px 16px;border:2px solid var(--ink);background:var(--bg);font-weight:600;transition:background .15s}
+.methods a.m:hover{background:var(--ink);color:var(--bg)}
+.methods svg{width:22px;height:22px;flex:none}
+
+/* Footer */
+footer{background:var(--ink);color:var(--bg);padding:80px 0 120px;border-top:6px solid var(--accent)}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:48px;align-items:start}
+footer h3{font-size:34px;margin-bottom:10px}
+footer p{color:var(--silver)}
+footer h4{font-family:var(--font-body);font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+footer li{margin-bottom:8px}
+footer li a:hover{color:var(--accent)}
+.foot-cta{margin-top:56px;padding-top:44px;border-top:1px solid #34343c;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.foot-cta .btn{font-size:19px;padding:18px 34px}
+.foot-cta strong{font-family:var(--font-display);font-size:clamp(26px,4vw,40px);font-weight:400;max-width:520px;line-height:1.15}
+.credit{margin-top:44px;text-align:center;font-size:14px;color:var(--silver);text-transform:lowercase}
+.copy{margin-top:8px;text-align:center;font-size:13px;color:#7b7b84}
+
+/* Sticky bottom bar */
+.bar{display:none}
+
+@media (max-width:1080px){
+  .hero-grid{gap:36px}
+  .about-grid{gap:40px}
+  .rev-grid{grid-template-columns:1fr 1fr}
+  .rev:first-child{grid-column:span 2}
+  .rev:nth-child(2),.rev:nth-child(3){margin-top:0}
+}
+@media (max-width:820px){
+  section{padding:76px 0}
+  .nav-links,.nav-cta{display:none}
+  .burger{display:flex}
+  .hero{padding:44px 0 76px}
+  .hero-grid,.products-grid,.about-grid,.contact-grid,.foot-grid{grid-template-columns:1fr}
+  .cover-frame{max-width:380px;margin:20px auto 0}
+  .burst{left:0;top:-20px;width:90px;height:90px}
+  .trust-grid{grid-template-columns:1fr 1fr}
+  .trust-item{border-bottom:1px solid #33333a}
+  .trust-item:nth-child(2){border-right:0}
+  .avatar-block{position:static}
+  .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+  .g1,.g2,.g3,.g4,.g5,.g6{grid-column:span 1;grid-row:span 1}
+  .g1{grid-column:span 2;grid-row:span 2}
+  .g6{grid-column:span 2}
+  .rev-grid{grid-template-columns:1fr}
+  .rev:first-child{grid-column:auto}
+  .bar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--ink);border-top:3px solid var(--accent)}
+  .bar a{display:flex;align-items:center;justify-content:center;gap:10px;padding:16px;font-weight:700;color:#fff;font-size:16px}
+  .bar a svg{width:20px;height:20px}
+  .bar .b-call{background:var(--ink)}
+  .bar .b-wa{background:var(--accent)}
+}
+@media (max-width:520px){
+  body{font-size:16px}
+  .card.featured{grid-template-columns:1fr}
+  .mini-cover{max-width:180px}
+  .card{padding:24px}
+  .hero-cta .btn{width:100%}
+  .trust-item{padding:28px 16px}
+  .trust-item strong{font-size:36px}
+  .hours{grid-template-columns:1fr 1fr}
+  .price-row{flex-direction:column;gap:6px}
+  .foot-cta .btn{width:100%}
+}
+</style>
+</head>
+<body>
+
+<!-- Reusable SVG symbols: bolt motif + icons -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="bolt" viewBox="0 0 64 64"><path d="M38 4 12 38h16l-5 22 29-36H35z" fill="currentColor"/></symbol>
+    <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 15l-1.5 5.5 5.6-1.5A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.3.87.88-3.2-.2-.33a8.2 8.2 0 1 1 7.12 4Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.22-.08-.39-.12-.55.12-.17.25-.64.8-.78.97-.14.16-.29.18-.53.06a6.7 6.7 0 0 1-3.3-2.88c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.76-1.82-.2-.47-.4-.41-.55-.42h-.47c-.17 0-.43.06-.65.3-.22.25-.86.84-.86 2.05s.88 2.38 1 2.55c.12.16 1.73 2.64 4.2 3.7 1.56.67 2.17.73 2.95.62.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></symbol>
+    <symbol id="phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1Z"/></symbol>
+    <symbol id="star" viewBox="0 0 24 24"><path fill="#E4252B" stroke="#14141A" stroke-width="1.2" d="m12 2.5 2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.2 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8Z"/></symbol>
+    <symbol id="insta" viewBox="0 0 24 24"><path fill="currentColor" d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 1.8A3.7 3.7 0 0 0 3.8 7.5v9a3.7 3.7 0 0 0 3.7 3.7h9a3.7 3.7 0 0 0 3.7-3.7v-9a3.7 3.7 0 0 0-3.7-3.7ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4Zm5.2-2.3a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path fill="#E4252B" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1.5 14.5-4-4 1.4-1.4 2.6 2.6 5.6-5.6 1.4 1.4Z"/></symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo" aria-label="Astra Comics home">
+      <svg style="color:#E4252B"><use href="#bolt"/></svg>
+      ASTRA <span>COMICS</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#products">Comics</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-outline" href="tel:+919999999999"><svg><use href="#phone"/></svg>Call</a>
+      <a class="btn btn-primary" href="https://wa.me/919999999999?text=Hi%20Astra%20Comics%2C%20I%20want%20to%20know%20more%20about%20your%20comics." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>WhatsApp</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#products">Comics</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow"><svg style="color:#E4252B"><use href="#bolt"/></svg>Astra Comic Universe</div>
+      <h1>India's original superheroes, <em>born on our soil</em>, now on paper!</h1>
+      <p class="proof">Two brothers, one universe: the Astra Comic Universe (ACU), built since 2022 with heroes you won't find anywhere else.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://wa.me/919999999999?text=Hi%20Astra%20Comics%2C%20I%20want%20to%20order%20Shock%20Master%201%20for%20%E2%82%B9899." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Order Shock Master 1</a>
+        <a class="btn btn-outline" href="tel:+919999999999"><svg><use href="#phone"/></svg>Call Us</a>
+      </div>
+      <div class="micro">
+        <span><svg style="color:#E4252B"><use href="#bolt"/></svg>Original Indian heroes</span>
+        <span><svg style="color:#E4252B"><use href="#bolt"/></svg>Ships across India</span>
+        <span><svg style="color:#E4252B"><use href="#bolt"/></svg>Reply on WhatsApp</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg class="burst" viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,2 61,22 83,13 79,37 99,45 82,61 91,83 67,80 59,99 45,82 23,93 25,70 4,62 22,48 8,29 31,29" fill="#E4252B" stroke="#14141A" stroke-width="3"/><text x="50" y="46" text-anchor="middle" font-family="Yatra One,serif" font-size="15" fill="#fff">ISSUE</text><text x="50" y="66" text-anchor="middle" font-family="Yatra One,serif" font-size="24" fill="#fff">#1</text></svg>
+      <div class="cover-frame">
+        <svg viewBox="0 0 400 560" role="img" aria-label="Shock Master 1 comic cover illustration">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c1c24"/><stop offset="1" stop-color="#3a3a44"/></linearGradient>
+            <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E8EAED"/><stop offset=".5" stop-color="#A9AEB6"/><stop offset="1" stop-color="#6d727a"/></linearGradient>
+          </defs>
+          <rect width="400" height="560" fill="url(#sky)"/>
+          <g stroke="#E4252B" stroke-width="3" opacity=".55">
+            <line x1="200" y1="270" x2="0" y2="40"/><line x1="200" y1="270" x2="90" y2="0"/><line x1="200" y1="270" x2="220" y2="0"/><line x1="200" y1="270" x2="340" y2="0"/><line x1="200" y1="270" x2="400" y2="120"/><line x1="200" y1="270" x2="0" y2="200"/><line x1="200" y1="270" x2="400" y2="300"/><line x1="200" y1="270" x2="0" y2="360"/>
+          </g>
+          <path d="M215 60 130 230h58l-24 120 120-170h-62l38-120z" fill="#E4252B" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>
+          <circle cx="200" cy="300" r="62" fill="url(#metal)" stroke="#14141A" stroke-width="5"/>
+          <path d="M150 300q50-34 100 0v18q-50 22-100 0z" fill="#14141A"/>
+          <rect x="160" y="304" width="30" height="8" fill="#E4252B"/><rect x="210" y="304" width="30" height="8" fill="#E4252B"/>
+          <path d="M120 360h160l30 140H90z" fill="url(#metal)" stroke="#14141A" stroke-width="5"/>
+          <path d="M215 385 180 440h24l-10 40 40-56h-26z" fill="#E4252B" stroke="#14141A" stroke-width="3"/>
+          <rect x="0" y="0" width="400" height="62" fill="#14141A"/>
+          <text x="200" y="42" text-anchor="middle" font-family="Yatra One,serif" font-size="34" fill="#E4252B" letter-spacing="3">SHOCK MASTER</text>
+          <rect x="0" y="505" width="400" height="55" fill="#E4252B"/>
+          <text x="200" y="540" text-anchor="middle" font-family="Yatra One,serif" font-size="22" fill="#fff" letter-spacing="2">ASTRA COMIC UNIVERSE</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust" aria-label="Key facts">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><strong>2022</strong><span>Year the Shaikh Brothers founded Astra</span></div>
+    <div class="trust-item"><strong>ACU</strong><span>One connected comic universe</span></div>
+    <div class="trust-item"><strong>100%</strong><span>Original Indian heroes and stories</span></div>
+    <div class="trust-item"><strong>₹899</strong><span>Shock Master 1, delivered to you</span></div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="wrap">
+    <div class="eyebrow"><svg style="color:#E4252B"><use href="#bolt"/></svg>The Comics</div>
+    <h2>Start your journey into the ACU</h2>
+    <p class="lead">Every Astra comic is written, drawn and published by two brothers in India, for readers who want a hero who feels like home.</p>
+
+    <div class="products-grid">
+      <article class="card featured">
+        <span class="badge">Now Available</span>
+        <div class="mini-cover">
+          <svg viewBox="0 0 200 280" aria-hidden="true">
+            <rect width="200" height="280" fill="#2a2a33"/>
+            <path d="M108 30 62 120h30l-14 64 64-92h-34l20-62z" fill="#E4252B" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+            <rect width="200" height="30" fill="#14141A"/>
+            <text x="100" y="21" text-anchor="middle" font-family="Yatra One,serif" font-size="17" fill="#E4252B">SHOCK MASTER</text>
+            <rect y="250" width="200" height="30" fill="#E4252B"/>
+            <text x="100" y="270" text-anchor="middle" font-family="Yatra One,serif" font-size="13" fill="#fff">ISSUE 1</text>
+          </svg>
+        </div>
+        <div>
+          <svg class="ico" style="color:#E4252B"><use href="#bolt"/></svg>
+          <h3>Shock Master 1</h3>
+          <p>The first issue of an original Indian superhero story. Electric powers, a city in danger and a hero the ACU is built around. Printed comic, shipped to your door.</p>
+          <span class="price">₹899 <small>per copy</small></span>
+          <a class="btn btn-primary btn-sm" href="https://wa.me/919999999999?text=Hi%20Astra%20Comics%2C%20I%20want%20to%20order%20Shock%20Master%201%20for%20%E2%82%B9899.%20Please%20share%20payment%20and%20delivery%20details." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Order on WhatsApp</a>
+        </div>
+      </article>
+
+      <article class="card soon">
+        <svg class="ico" style="color:#A9AEB6"><use href="#bolt"/></svg>
+        <h3>More ACU heroes</h3>
+        <p>More heroes from the Astra Comic Universe are in the works. Message us to hear first when the next issue is ready.</p>
+        <div><a class="btn btn-outline btn-sm" href="https://wa.me/919999999999?text=Hi%20Astra%20Comics%2C%20please%20tell%20me%20when%20the%20next%20ACU%20comic%20is%20released." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Ask about next issue</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="avatar-block">
+      <div class="avatar" aria-hidden="true">SB</div>
+      <h3>The Shaikh Brothers</h3>
+      <p>Founders, writers and artists, Astra Comics</p>
+    </div>
+    <div class="about-copy">
+      <div class="eyebrow"><svg style="color:#E4252B"><use href="#bolt"/></svg>Our Story</div>
+      <h2>We grew up reading heroes who never looked like us</h2>
+      <p>My brother and I spent our school days trading comics and copying panels into our notebooks. Every hero lived in a faraway city. We kept wondering why none of them lived in ours.</p>
+      <p>In 2022 we stopped wondering and started building. Astra Comics was our answer: an original Indian universe, the ACU, with its own heroes, villains and streets you would recognise. Shock Master was the first story we finished, and we still remember the night we saw the first printed copy.</p>
+      <p>Today the two of us still do the work ourselves, from the first sketch to packing your order.</p>
+      <ul class="diff">
+        <li><svg><use href="#check"/></svg>Original Indian heroes, no borrowed characters</li>
+        <li><svg><use href="#check"/></svg>One connected universe, so every issue adds to the last</li>
+        <li><svg><use href="#check"/></svg>Written and drawn by the founders themselves</li>
+        <li><svg><use href="#check"/></svg>Direct WhatsApp contact with the people who made your comic</li>
+        <li><svg><use href="#check"/></svg>Cinematic art style with bold silver, black and red colours</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="gallery-head">
+      <div>
+        <div class="eyebrow"><svg style="color:#E4252B"><use href="#bolt"/></svg>Gallery</div>
+        <h2>Inside the universe</h2>
+      </div>
+      <a class="btn btn-outline btn-sm" href="https://instagram.com/astra_superstudio" target="_blank" rel="noopener"><svg><use href="#insta"/></svg>@astra_superstudio</a>
+    </div>
+    <div class="gallery">
+      <figure class="g g1"><img loading="lazy" src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=800&auto=format&fit=crop" alt="Stack of comic books on a table"><figcaption class="cap">Comic stacks</figcaption></figure>
+      <figure class="g g2"><img loading="lazy" src="https://images.unsplash.com/photo-1608889175123-8ee362201f81?w=800&auto=format&fit=crop" alt="Superhero comic pages open"><figcaption class="cap">Page art</figcaption></figure>
+      <figure class="g g3"><img loading="lazy" src="https://images.unsplash.com/photo-1588497859490-85d1c17db96d?w=800&auto=format&fit=crop" alt="Comic book collection on a shelf"><figcaption class="cap">The shelf</figcaption></figure>
+      <figure class="g g4"><img loading="lazy" src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=800&auto=format&fit=crop" alt="Colourful illustrated hero artwork"><figcaption class="cap">Hero art</figcaption></figure>
+      <figure class="g g5"><img loading="lazy" src="https://images.unsplash.com/photo-1601645191163-3fc0d5d64e35?w=800&auto=format&fit=crop" alt="Pencil sketching on paper"><figcaption class="cap">Sketch stage</figcaption></figure>
+      <figure class="g g6"><img loading="lazy" src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3?w=800&auto=format&fit=crop" alt="Reader enjoying a comic book"><figcaption class="cap">Readers</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="eyebrow"><svg style="color:#E4252B"><use href="#bolt"/></svg>Reader Reviews</div>
+    <h2>What readers say</h2>
+    <div class="rev-grid">
+      <article class="rev">
+        <div class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>
+        <p>Finally an Indian hero that doesn't feel like a copy of someone else. Shock Master's art looks proper cinematic, the red and silver pops on every page. Read it twice in one night.</p>
+        <b>Arjun M.</b><span>Reader, Pune</span>
+      </article>
+      <article class="rev">
+        <div class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>
+        <p>Ordered on WhatsApp, they replied in minutes and the comic reached me in a few days. Packed well, no bent corners.</p>
+        <b>Sana K.</b><span>Reader, Hyderabad</span>
+      </article>
+      <article class="rev">
+        <div class="stars" role="img" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>
+        <p>Bought it for my younger cousin and ended up reading it first. Waiting for the next ACU issue now.</p>
+        <b>Rohit D.</b><span>Reader, Jaipur</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="eyebrow"><svg style="color:#E4252B"><use href="#bolt"/></svg>Pricing</div>
+    <h2>One comic, one clear price</h2>
+    <div class="price-list">
+      <div class="price-row"><div><b>Shock Master 1</b><span>Printed comic, Astra Comic Universe</span></div><strong>₹899</strong></div>
+      <div class="price-row"><div><b>Delivery across India</b><span>Charges and timing confirmed on WhatsApp</span></div><strong>On chat</strong></div>
+      <div class="price-row"><div><b>Payment</b><span>Details shared when you place your order</span></div><strong>On chat</strong></div>
+    </div>
+    <p class="price-note">Message us and we will confirm your total before you pay.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow"><svg style="color:#E4252B"><use href="#bolt"/></svg>Contact</div>
+    <h2>Talk to the brothers directly</h2>
+    <div class="contact-grid">
+      <div class="map">
+        <iframe title="Map of India" loading="lazy" src="https://maps.google.com/maps?q=India&output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="info">
+        <h3>Hours</h3>
+        <div class="hours">
+          <span>Monday to Saturday</span><span>10 am to 8 pm</span>
+          <span>Sunday</span><span>12 pm to 6 pm</span>
+          <span>WhatsApp replies</span><span>Same day</span>
+        </div>
+        <h3>Reach us</h3>
+        <div class="methods">
+          <a class="m" href="tel:+919999999999"><svg><use href="#phone"/></svg>Call +91 99999 99999</a>
+          <a class="m" href="https://wa.me/919999999999?text=Hi%20Astra%20Comics%2C%20I%20have%20a%20question." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>WhatsApp us</a>
+          <a class="m" href="https://instagram.com/astra_superstudio" target="_blank" rel="noopener"><svg><use href="#insta"/></svg>@astra_superstudio</a>
+          <a class="m" href="https://maps.google.com/maps?q=India" target="_blank" rel="noopener"><svg><use href="#pin"/></svg>Based in India, ships nationwide</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h3>ASTRA COMICS</h3>
+        <p>India's Original Superhero Stories, Beyond Imagination</p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#products">Comics</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="https://instagram.com/astra_superstudio" target="_blank" rel="noopener">Instagram @astra_superstudio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-cta">
+      <strong>Ready to meet Shock Master?</strong>
+      <a class="btn btn-primary" href="https://wa.me/919999999999?text=Hi%20Astra%20Comics%2C%20I%20want%20to%20order%20Shock%20Master%201." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Order on WhatsApp</a>
+    </div>
+    <p class="credit">built with ❤️ by 21.coders</p>
+    <p class="copy">&copy; <span id="year">2026</span> Astra Comics. All rights reserved.</p>
+  </div>
+</footer>
+
+<nav class="bar" aria-label="Quick contact">
+  <a class="b-call" href="tel:+919999999999"><svg><use href="#phone"/></svg>Call</a>
+  <a class="b-wa" href="https://wa.me/919999999999?text=Hi%20Astra%20Comics%2C%20I%20want%20to%20order%20Shock%20Master%201." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>WhatsApp</a>
+</nav>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('open');
+      burger.setAttribute('aria-expanded', false);
+    });
+  });
+</script>
+</body>
+</html>
